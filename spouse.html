@@ -1,0 +1,46 @@
+<div id="spousetoggle">
+   <h3 class="fs-title display-block headertext">SPOUSE DETAILS</h3>
+
+   <div flex-container="row" flex-gutter="24" flex-align="center">
+      <div flex-item>
+        <lx-text-field label="Spouse First Name">
+          <input type="text" ng-model="person.spousefname" required>
+        </lx-text-field>
+      </div>
+      <div flex-item>
+        <lx-text-field label="Spouse Last Name">
+          <input type="text" ng-model="person.spouselname" required>
+        </lx-text-field>
+      </div>
+    </div>
+
+    <div flex-container="row" flex-gutter="24" flex-align="center">
+      <div flex-item>
+          <lx-date-picker model="person.spousedob" label="Date of birth" locale="en"></lx-date-picker>
+      </div>
+      <div flex-item>
+          <lx-date-picker model="person.weddingdate" label="Wedding Anniversary" locale="en"></lx-date-picker>
+      </div>
+    </div>
+
+  <div flex-container="row" flex-gutter="24" flex-align="center">
+    <div flex-item>
+      <lx-text-field label="Mobile Number">
+        <input type="text" ng-model="person.spousemobile">
+      </lx-text-field>
+    </div>
+    <div flex-item>
+       <lx-select ng-model="person.spousebloodgroup" placeholder="Blood Group" choices="blood" floating-label>
+        <lx-select-selected>{{ $selected.name }}</lx-select-selected>
+
+        <lx-select-choices>{{ $choice.name }}</lx-select-choices>
+      </lx-select>
+    </div>
+  </div>
+  <div flex-container="row" flex-gutter="24" flex-align="center">
+    <div flex-item>
+      <lx-file-input file-model='person.fileModel' label="Browse and upload your picture..."></lx-file-input>
+    </div>
+  </div>
+
+</div>

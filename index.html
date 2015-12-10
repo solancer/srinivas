@@ -1,0 +1,282 @@
+<html ng-app="sindh">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Sindhi Federation Of Bangalore</title>
+    <link rel="stylesheet" href="bower_components/lumx/dist/lumx.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+</head>
+<body ng-controller="MainCtrl" ng-cloak>
+  <!-- <div class="p+ bgc-sin"></div> -->
+
+  <div flex-container="row" flex-align="center">
+    
+    <div class="wrapper" flex-item="9" flex-item-order="1">
+      <header class="br-der">
+        <div class="logo"><img src="img/logo.png" width="75" height="116" alt="Logo"></div>
+        <div class="nav-right">
+        <h1>Sindhi Federation of Bangalore</h1>
+        <div class="head-desc">10/7, Kumara Krupa Road, High Grounds, Banglore - 560 001<br>
+        <a href="mailto:bangaloresindhidirectory2015@gmail.com">bangaloresindhidirectory2015@gmail.com</a></div>
+        <div class="application">APPLICATION FORM <br>
+        <span>Sindhi Directory 2016</span>
+        </div>
+        </div>
+      </header>
+      <div class="text-cont">
+        <br>
+          <p>Dear Friends,</p>
+          <br>
+          <p>Welcome to the Online Application Centre for the 2016 Sindhi Directory, brought about by the <strong>Sindhi Federation of Bangalore</strong> in association with <strong>Marching Ants!</strong></p>
+          <br>
+          <p>Rolled out for the first time in 1970, the primary aim of the Directory has been to promote fellowship amongst the Sindhi Brethren and in doing so, the federation has been periodically rolling out a very useful Directory, updated with the latest addresses and other useful information. The information furnished in the Directory has then been used to facilitate regular &amp; intimate communication about the community, such as its Cultural, Social, Religious &amp; Incidental activities.</p>
+          <br>
+          <p>The last directory was published five years ago and the time has come once again, for it to be revised and updated. We've added a few more fields this time, based on feedback received and do believe that you will find it useful and non-intrusive. Also, in keeping with the Internet Age, we've partnered with Marching Ants, an agency headed by someone from our community to maintain an online version of the same as well.</p>
+          <br>
+          <p>We do sincerely hope you will see value in our efforts &amp; join/update your contact information with us. Don't forget to please spread the word amongst our brethren, so we could include as many members as possible &amp; build a strong and well-connected network.</p>
+          <br>
+          <p><strong>Note:</strong> Your listing in the Directory is free, so please fill out the online form with all the relevant details requested and save it, so that the information could be used towards the forthcoming edition.</p>
+          <br>
+          <p>Thanking you.</p>
+          <br>
+          <p>Yours sincerely,</p>
+          <br>
+          <div class="sign"><img src="img/signature-img.png" width="53" height="32" alt="Sign"></div>
+
+          <p style="padding-bottom:15px; line-height:18px;"><strong>Aashish Amarlall</strong><br>
+          <strong style="font-style:italic; font-weight:normal;">President</strong><br>
+          Sindhi Seva Samiti
+
+          </p>
+          <div class="tc-white-1 mt++" flex-container="column" flex-align="space-between center">
+              <button  class="btn btn--m btn--blue btn-sin btn--raised" lx-ripple  href="#formmain" ng-click="show = !show">Click to Register</button>
+          </div>
+      </div>
+      <form id="formmain" ng-submit="submitData()" ng-show="show">
+        <h3 class="fs-title display-block headertext">YOUR PERSONAL DETAILS</h3>
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+          <div flex-item>
+            <lx-text-field label="First name">
+                <input type="text" ng-model="person.firstname" required>
+            </lx-text-field>
+          </div>
+          <div flex-item>
+            <lx-text-field label="Last name">
+                <input type="text" ng-model="person.lastname" required>
+            </lx-text-field>
+          </div>
+        </div>
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+          <div flex-item>
+                <lx-date-picker model="person.dob" label="Date of birth" locale="en" ></lx-date-picker>
+          </div>
+          <div flex-item>
+             <lx-select ng-model="person.bloodgroup" placeholder="Blood Group" choices="blood" floating-label>
+              <lx-select-selected required>{{ $selected.name }}</lx-select-selected>
+
+              <lx-select-choices>{{ $choice.name }}</lx-select-choices>
+            </lx-select>
+          </div>
+          
+        </div>
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+           <div flex-item>
+            <lx-text-field label="Mobile Number">
+                <input type="text" ng-model="person.mobilenumber" required>
+            </lx-text-field>
+          </div>
+
+          <div flex-item>
+            <lx-select ng-model="person.maritialstatus" placeholder="Marital Status" ng-change="maritialCheck(person.maritialstatus)" choices="maritial" floating-label>
+              <lx-select-selected>{{ $selected.name }}</lx-select-selected>
+
+              <lx-select-choices>{{ $choice.name }}</lx-select-choices>
+          </lx-select>
+          </div>
+        </div>
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+          <div flex-item>
+            <lx-file-input label="Browse and upload your picture..."></lx-file-input>
+          </div>
+        </div>
+
+        <div id="render"></div>
+
+        <div class="border-sin" flex-container="row" flex-align="space-between center">
+          <div flex-item="10">
+            <h3 class="fs-title display-block headertext2">ADD DEPENDANTS DETAILS</h3>
+          </div>
+          <div flex-item>
+               <button class="btn btn--m btn--blue btn-sin btn--raised" ng-click="addDependants()" lx-ripple>Add</button>
+          </div>
+        </div>  
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+           <div flex-item>
+            <lx-text-field label="Dependants Name (un married)">
+                <input type="text" ng-model="person.dependant1.name" required>
+            </lx-text-field>
+          </div>
+          <div flex-item>
+            <lx-text-field label="Dependants Relationship">
+                <input type="text" ng-model="person.dependant1.relation" required>
+            </lx-text-field>
+          </div>
+           
+        </div>
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+          <div flex-item>
+               <lx-select ng-model="person.dependant1.blood" placeholder="Blood Group" value="Single" choices="blood" floating-label>
+                <lx-select-selected>{{ $selected.name }}</lx-select-selected>
+
+                <lx-select-choices>{{ $choice.name }}</lx-select-choices>
+              </lx-select>
+            </div>
+          <div flex-item>
+                <lx-date-picker model="person.dependant1.dob" label="Date of birth" locale="en"></lx-date-picker>
+          </div>
+           
+        </div>
+        <div id="render2"></div>
+
+
+      <h3 class="fs-title display-block headertext">RESIDENCE ADDRESS</h3>
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+          
+          <div flex-item>
+            <lx-text-field label="Residence Address 1">
+                <input type="text" ng-model="person.residence.address1" required>
+            </lx-text-field>
+          </div>
+          <div flex-item>
+            <lx-text-field label="Residence Address 2">
+                <input type="text" ng-model="person.residence.address2" required>
+            </lx-text-field>
+          </div>
+        </div>
+
+        <div flex-container="row" flex-gutter="24" flex-align="center" required>
+          <div flex-item>
+            <lx-text-field label="Residence Address 3">
+                <input type="text" ng-model="person.residence.address3" required>
+            </lx-text-field>
+          </div>
+          <div flex-item>
+            <lx-text-field label="Landline No">
+                <input type="text" ng-model="person.residence.phone" required>
+            </lx-text-field>
+          </div>
+        </div>
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+          <div flex-item>
+            <lx-text-field label="Email">
+                <input type="email" ng-model="person.residence.email" required>
+            </lx-text-field>
+          </div>
+          <div flex-item>
+            <lx-text-field label="State">
+                <input type="text" ng-model="person.residence.state" required>
+            </lx-text-field>
+          </div>
+        </div>
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+          <div flex-item>
+            <lx-text-field label="City">
+                <input type="text" ng-model="person.residence.city" required>
+            </lx-text-field>
+          </div>
+          <div flex-item>
+            <lx-text-field label="PIN Code">
+                <input type="text" ng-model="person.residence.pincode" required>
+            </lx-text-field>
+          </div>
+        </div>
+
+      <div class="border-sin" flex-container="row" flex-align="space-between center">
+        <div flex-item="3">
+          <h3 class="fs-title display-block headertext2">OFFICE ADDRESS</h3>
+        </div>
+        <div flex-item class="check-down">
+            <input type="checkbox" ng-click="copyResidence(person.residence)" id="checkbox1" class="checkbox__input">
+            <label for="checkbox1" class="checkbox__label">Same as above</label>
+        </div>
+      </div>  
+        
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+          
+          <div flex-item>
+            <lx-text-field label="Office Address 1">
+                <input type="text" ng-model="person.office.address1">
+            </lx-text-field>
+          </div>
+          <div flex-item>
+            <lx-text-field label="Office Address 2">
+                <input type="text" ng-model="person.office.address2">
+            </lx-text-field>
+          </div>
+        </div>
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+          <div flex-item>
+            <lx-text-field label="Office Address 3">
+                <input type="text" ng-model="person.office.address3">
+            </lx-text-field>
+          </div>
+          <div flex-item>
+            <lx-text-field label="Landline No">
+                <input type="text" ng-model="person.office.phone">
+            </lx-text-field>
+          </div>
+        </div>
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+          <div flex-item>
+            <lx-text-field label="Email">
+                <input type="text" ng-model="person.office.email">
+            </lx-text-field>
+          </div>
+          <div flex-item>
+            <lx-text-field label="State">
+                <input type="text" ng-model="person.office.state">
+            </lx-text-field>
+          </div>
+        </div>
+
+        <div flex-container="row" flex-gutter="24" flex-align="center">
+          <div flex-item>
+            <lx-text-field label="City">
+                <input type="text" ng-model="person.office.city">
+            </lx-text-field>
+          </div>
+          <div flex-item>
+            <lx-text-field label="PIN Code">
+                <input type="text" ng-model="person.office.pincode">
+            </lx-text-field>
+          </div>
+        </div>
+
+        <button type="submit"  class="btn btn--m btn--blue btn-sin btn--raised mt++" lx-ripple>Save</button>
+      </form>
+
+    </div>
+
+
+  </div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/velocity/velocity.min.js"></script>
+<script src="bower_components/moment/min/moment-with-locales.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/lumx/dist/lumx.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

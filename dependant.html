@@ -1,0 +1,27 @@
+<h3 class="fs-title display-block headertext">SECOND DEPENDANT DETAILS</h3>
+
+<div flex-container="row" flex-gutter="24" flex-align="center">
+   <div flex-item>
+    <lx-text-field label="Dependants Name (un married)">
+        <input type="text" ng-model="person.dependant2.name" >
+    </lx-text-field>
+  </div>
+  <div flex-item>
+    <lx-text-field label="Dependants Relationship">
+        <input type="text" ng-model="person.dependant2.relation" >
+    </lx-text-field>
+  </div>
+   
+</div>
+<div flex-container="row" flex-gutter="24" flex-align="center">
+  <div flex-item>
+       <lx-select ng-model="person.dependant2.blood" placeholder="Blood Group" choices="blood" floating-label >
+        <lx-select-selected>{{ $selected.name }}</lx-select-selected>
+
+        <lx-select-choices>{{ $choice.name }}</lx-select-choices>
+      </lx-select>
+    </div>
+  <div flex-item>
+        <lx-date-picker model="person.dependant2.dob" label="Date of birth" locale="en" ></lx-date-picker>
+  </div>
+</div>
