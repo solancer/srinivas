@@ -12,7 +12,7 @@
   <!-- <div class="p+ bgc-sin"></div> -->
 
   <div flex-container="row" flex-align="center">
-    
+
     <div class="wrapper" flex-item="9" flex-item-order="1">
       <header class="br-der">
         <div class="logo"><img src="img/logo.png" width="75" height="116" alt="Logo"></div>
@@ -81,7 +81,7 @@
               <lx-select-choices>{{ $choice.name }}</lx-select-choices>
             </lx-select>
           </div>
-          
+
         </div>
 
         <div flex-container="row" flex-gutter="24" flex-align="center">
@@ -115,7 +115,7 @@
           <div flex-item>
                <button class="btn btn--m btn--blue btn-sin btn--raised" ng-click="addDependants()" lx-ripple>Add</button>
           </div>
-        </div>  
+        </div>
 
         <div flex-container="row" flex-gutter="24" flex-align="center">
            <div flex-item>
@@ -128,7 +128,7 @@
                 <input type="text" ng-model="person.dependant1.relation" required>
             </lx-text-field>
           </div>
-           
+
         </div>
         <div flex-container="row" flex-gutter="24" flex-align="center">
           <div flex-item>
@@ -141,7 +141,7 @@
           <div flex-item>
                 <lx-date-picker model="person.dependant1.dob" label="Date of birth" locale="en"></lx-date-picker>
           </div>
-           
+
         </div>
         <div id="render2"></div>
 
@@ -149,7 +149,7 @@
       <h3 class="fs-title display-block headertext">RESIDENCE ADDRESS</h3>
 
         <div flex-container="row" flex-gutter="24" flex-align="center">
-          
+
           <div flex-item>
             <lx-text-field label="Residence Address 1">
                 <input type="text" ng-model="person.residence.address1" required>
@@ -209,11 +209,11 @@
             <input type="checkbox" ng-click="copyResidence(person.residence)" id="checkbox1" class="checkbox__input">
             <label for="checkbox1" class="checkbox__label">Same as above</label>
         </div>
-      </div>  
-        
+      </div>
+
 
         <div flex-container="row" flex-gutter="24" flex-align="center">
-          
+
           <div flex-item>
             <lx-text-field label="Office Address 1">
                 <input type="text" ng-model="person.office.address1">
