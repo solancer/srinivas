@@ -1,3 +1,28 @@
+@import "../bower_components/compass-breakpoint/stylesheets/breakpoint"; // Breakpoint
+
+/*********************
+BREAKPOINTS
+*********************/
+
+ @mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+
+  }
+}
+
 html {
   background-color: #fff !important;
   min-height: 500px;
@@ -125,9 +150,22 @@ header {
   float: left;
 }
 .logo {
-  position: absolute;
-  LEFT: 90;
+  @include breakpoint(desktop) {
+    position: absolute;
+    LEFT: 90;
+	}
+  @include breakpoint(phablet) {
+    float: left;
+  }
+  @include breakpoint(mobileonly) {
+    float: left;
+  }
+  @include breakpoint(tablet) {
+    position: absolute;
+    LEFT: 50;
+  }
 }
+
 .nav-right {
   // float: left;
   // width: 80%;

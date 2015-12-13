@@ -1,4 +1,4 @@
-angular.module('sindh', ['lumx'])
+angular.module('sindh', ['lumx', 'google.places'])
 
 .controller('MainCtrl', function($scope, $compile, $http, LxNotificationService) {
 
@@ -148,7 +148,7 @@ angular.module('sindh', ['lumx'])
       }).success(function(response) {
         LxNotificationService.success('Saved!');
         $scope.person = {};
-        $scope.show();
+        $scope.show = false;
       });
   };
 

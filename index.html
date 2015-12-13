@@ -75,7 +75,7 @@
                 <lx-date-picker model="person.dob" label="Date of birth" locale="en" ></lx-date-picker>
           </div>
           <div flex-item>
-             <lx-select ng-model="person.bloodgroup" placeholder="Blood Group" choices="blood" floating-label>
+             <lx-select ng-model="person.bloodgroup" placeholder="Blood Group" choices="blood" floating-label required="true">
               <lx-select-selected required>{{ $selected.name }}</lx-select-selected>
 
               <lx-select-choices>{{ $choice.name }}</lx-select-choices>
@@ -92,7 +92,7 @@
           </div>
 
           <div flex-item>
-            <lx-select ng-model="person.maritialstatus" placeholder="Marital Status" ng-change="maritialCheck(person.maritialstatus)" choices="maritial" floating-label>
+            <lx-select ng-model="person.maritialstatus" placeholder="Marital Status" ng-required ng-change="maritialCheck(person.maritialstatus)" choices="maritial" floating-label>
               <lx-select-selected>{{ $selected.name }}</lx-select-selected>
 
               <lx-select-choices>{{ $choice.name }}</lx-select-choices>
@@ -191,7 +191,7 @@
         <div flex-container="row" flex-gutter="24" flex-align="center">
           <div flex-item>
             <lx-text-field label="City">
-                <input type="text" ng-model="person.residence.city" required>
+                <input type="text" g-places-autocomplete ng-model="person.residence.city" required>
             </lx-text-field>
           </div>
           <div flex-item>
@@ -242,7 +242,7 @@
         <div flex-container="row" flex-gutter="24" flex-align="center">
           <div flex-item>
             <lx-text-field label="Email">
-                <input type="text" ng-model="person.office.email">
+                <input type="email" ng-model="person.office.email">
             </lx-text-field>
           </div>
           <div flex-item>
@@ -277,6 +277,9 @@
 <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/lumx/dist/lumx.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+<script src="/bower_components/angular-google-places-autocomplete/src/autocomplete.js"></script>
 <script src="js/app.js"></script>
+<link rel="stylesheet" href="/bower_components/angular-google-places-autocomplete/src/autocomplete.css">
 </body>
 </html>

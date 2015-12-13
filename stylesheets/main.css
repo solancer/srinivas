@@ -1,1 +1,216 @@
-html{background-color:#fff !important;min-height:500px}.bgc-sin{background-color:#6B2228}.headertext{color:#6B2228 !important;padding:25px 0 15px 0;border-bottom:2px solid #6B2228 !important}.headertext2{color:#6B2228 !important;padding:25px 0 15px 0}header{width:100%;padding:20px 0px;float:left}.center-btn{margin:0px auto !important}.border-sin{border-bottom:2px solid #6B2228 !important}.text-field--is-focused .text-field__label{color:#6B2228 !important}.text-field:after{background-color:#6B2228 !important}.lx-date-input input.text-field__input{pointer-events:none}.btn-sin{background-color:#6B2228 !important;font-size:15px;padding:0 50px !important}.checkbox__label:after{color:#6B2228 !important}.wrapper{margin:24px;padding:15px;min-height:90%;border-radius:2px;background-color:#FFF;border-top:3px solid #662929;border-bottom:3px solid #662929;border-radius:4px;box-shadow:0 1.5px 4px rgba(0,0,0,0.24),0 1.5px 6px rgba(0,0,0,0.12);overflow:hidden}.header-sin{background-color:#6B2228;box-shadow:0 3px 1px -2px rgba(0,0,0,0.14),0 2px 2px 0 rgba(0,0,0,0.098),0 1px 5px 0 rgba(0,0,0,0.082);height:60px;left:0;padding:12px}input[google-place]::-webkit-input-placeholder{opacity:0}input[google-place]:-moz-placeholder{opacity:0}input[google-place]::-moz-placeholder{opacity:0}input[google-place]:-ms-input-placeholder{opacity:0}.check-down{margin-top:10px}@font-face{font-family:"AvantGarde Bk BT";src:url("../fonts/Avgardn.eot");src:url("../fonts/Avgardn.eot?#iefix") format("embedded-opentype"),url("../fonts/Avgardn.ttf") format("truetype"),url("../fonts/Avgardn.woff") format("woff"),url("../fonts/Avgardn.svg#AvantGarde Bk BT") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"Trajan Pro";src:url("../fonts/TrajanPro-Regular_0.eot");src:url("../fonts/TrajanPro-Regular_0.eot?#iefix") format("embedded-opentype"),url("../fonts/TrajanPro-Regular_0.otf") format("opentype"),url("../fonts/TrajanPro-Regular_0.woff") format("woff"),url("../fonts/TrajanPro-Regular_0.ttf") format("truetype"),url("../fonts/TrajanPro-Regular_0.svg#Trajan Pro") format("svg");font-weight:normal;font-style:normal}header{width:100%;padding:20px 0px;float:left}.logo{position:absolute;LEFT:90}.nav-right{text-align:center;margin-left:30px}h1{font-family:"Trajan Pro";font-size:31px;color:#662929;margin:10px 0px 0px 0px}.head-desc{color:#662929;font-family:"AvantGarde Bk BT";font-size:13px;line-height:20px}.head-desc a{text-decoration:none}.application{font-size:20px;letter-spacing:1;font-weight:bold;text-transform:uppercase;margin-top:10px;box-sizing:border-box;font-family:"AvantGarde Bk BT";color:#662929}.application span{font-size:20px;font-weight:bold;font-family:"AvantGarde Bk BT";color:#662929}.text-cont{float:left;width:100%;padding:13px 0px;font-family:"AvantGarde Bk BT";color:#662929}.text-cont p{font-size:14px;text-align:justify;line-height:25px;font-family:"AvantGarde Bk BT";color:#662929}.text-cont p:last-child{padding-bottom:10px;font-family:"AvantGarde Bk BT";color:#662929}.head-desc a{text-decoration:none;box-sizing:border-box;font-family:"AvantGarde Bk BT";color:#662929}.less-padding{padding:6.3px 0px !important}.br-der{border-bottom:1px solid #6B2228 !important}
+/*********************
+BREAKPOINTS
+*********************/
+/* line 26, ../sass/main.scss */
+html {
+  background-color: #fff !important;
+  min-height: 500px; }
+
+/* line 31, ../sass/main.scss */
+.bgc-sin {
+  background-color: #6B2228; }
+
+/* line 36, ../sass/main.scss */
+.headertext {
+  color: #6B2228 !important;
+  padding: 25px 0 15px 0;
+  border-bottom: 2px solid #6B2228 !important; }
+
+/* line 43, ../sass/main.scss */
+.headertext2 {
+  color: #6B2228 !important;
+  padding: 25px 0 15px 0; }
+
+/* line 49, ../sass/main.scss */
+header {
+  width: 100%;
+  padding: 20px 0px;
+  float: left; }
+
+/* line 55, ../sass/main.scss */
+.center-btn {
+  margin: 0px auto !important; }
+
+/* line 59, ../sass/main.scss */
+.border-sin {
+  border-bottom: 2px solid #6B2228 !important; }
+
+/* line 63, ../sass/main.scss */
+.text-field--is-focused .text-field__label {
+  color: #6B2228 !important; }
+
+/* line 67, ../sass/main.scss */
+.text-field:after {
+  background-color: #6B2228 !important; }
+
+/* line 71, ../sass/main.scss */
+.lx-date-input input.text-field__input {
+  pointer-events: none; }
+
+/* line 76, ../sass/main.scss */
+.btn-sin {
+  background-color: #6B2228 !important;
+  font-size: 15px;
+  padding: 0 50px !important; }
+
+/* line 82, ../sass/main.scss */
+.checkbox__label:after {
+  color: #6B2228 !important; }
+
+/* line 86, ../sass/main.scss */
+.wrapper {
+  margin: 24px;
+  padding: 15px;
+  min-height: 90%;
+  border-radius: 2px;
+  background-color: #FFF;
+  border-top: 3px solid #662929;
+  border-bottom: 3px solid #662929;
+  border-radius: 4px;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  overflow: hidden; }
+
+/* line 99, ../sass/main.scss */
+.header-sin {
+  background-color: #6B2228;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.082);
+  height: 60px;
+  left: 0;
+  padding: 12px; }
+
+/* line 107, ../sass/main.scss */
+input[google-place]::-webkit-input-placeholder {
+  opacity: 0; }
+
+/* line 111, ../sass/main.scss */
+input[google-place]:-moz-placeholder {
+  /* Firefox 18- */
+  opacity: 0; }
+
+/* line 117, ../sass/main.scss */
+input[google-place]::-moz-placeholder {
+  /* Firefox 19+ */
+  opacity: 0; }
+
+/* line 123, ../sass/main.scss */
+input[google-place]:-ms-input-placeholder {
+  opacity: 0; }
+
+/* line 127, ../sass/main.scss */
+.check-down {
+  margin-top: 10px; }
+
+@font-face {
+  font-family: "AvantGarde Bk BT";
+  src: url("../fonts/Avgardn.eot");
+  src: url("../fonts/Avgardn.eot?#iefix") format("embedded-opentype"), url("../fonts/Avgardn.ttf") format("truetype"), url("../fonts/Avgardn.woff") format("woff"), url("../fonts/Avgardn.svg#AvantGarde Bk BT") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Trajan Pro";
+  src: url("../fonts/TrajanPro-Regular_0.eot");
+  src: url("../fonts/TrajanPro-Regular_0.eot?#iefix") format("embedded-opentype"), url("../fonts/TrajanPro-Regular_0.otf") format("opentype"), url("../fonts/TrajanPro-Regular_0.woff") format("woff"), url("../fonts/TrajanPro-Regular_0.ttf") format("truetype"), url("../fonts/TrajanPro-Regular_0.svg#Trajan Pro") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 147, ../sass/main.scss */
+header {
+  width: 100%;
+  padding: 20px 0px;
+  float: left; }
+
+@media (min-width: 70em) {
+  /* line 152, ../sass/main.scss */
+  .logo {
+    position: absolute;
+    LEFT: 90; } }
+@media (min-width: 37.5em) {
+  /* line 152, ../sass/main.scss */
+  .logo {
+    float: left; } }
+@media (max-width: 37.5em) {
+  /* line 152, ../sass/main.scss */
+  .logo {
+    float: left; } }
+@media (min-width: 50em) {
+  /* line 152, ../sass/main.scss */
+  .logo {
+    position: absolute;
+    LEFT: 50; } }
+
+/* line 169, ../sass/main.scss */
+.nav-right {
+  text-align: center;
+  margin-left: 30px; }
+
+/* line 175, ../sass/main.scss */
+h1 {
+  font-family: "Trajan Pro";
+  font-size: 31px;
+  color: #662929;
+  margin: 10px 0px 0px 0px; }
+
+/* line 181, ../sass/main.scss */
+.head-desc {
+  color: #662929;
+  font-family: "AvantGarde Bk BT";
+  font-size: 13px;
+  line-height: 20px; }
+
+/* line 187, ../sass/main.scss */
+.head-desc a {
+  text-decoration: none; }
+
+/* line 190, ../sass/main.scss */
+.application {
+  font-size: 20px;
+  letter-spacing: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  box-sizing: border-box;
+  font-family: "AvantGarde Bk BT";
+  color: #662929; }
+
+/* line 200, ../sass/main.scss */
+.application span {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "AvantGarde Bk BT";
+  color: #662929; }
+
+/* line 206, ../sass/main.scss */
+.text-cont {
+  float: left;
+  width: 100%;
+  padding: 13px 0px;
+  font-family: "AvantGarde Bk BT";
+  color: #662929; }
+
+/* line 214, ../sass/main.scss */
+.text-cont p {
+  font-size: 14px;
+  text-align: justify;
+  line-height: 25px;
+  font-family: "AvantGarde Bk BT";
+  color: #662929; }
+
+/* line 221, ../sass/main.scss */
+.text-cont p:last-child {
+  padding-bottom: 10px;
+  font-family: "AvantGarde Bk BT";
+  color: #662929; }
+
+/* line 228, ../sass/main.scss */
+.head-desc a {
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "AvantGarde Bk BT";
+  color: #662929; }
+
+/* line 235, ../sass/main.scss */
+.less-padding {
+  padding: 6.3px 0px !important; }
+
+/* line 239, ../sass/main.scss */
+.br-der {
+  border-bottom: 1px solid #6B2228 !important; }
