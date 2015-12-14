@@ -129,13 +129,13 @@ input[google-place]:-ms-input-placeholder {
 }
 
 
-@font-face {
-  font-family: "AvantGarde Bk BT";
-  src: url('../fonts/Avgardn.eot');
-  src: url('../fonts/Avgardn.eot?#iefix') format('embedded-opentype'), url('../fonts/Avgardn.ttf') format('truetype'), url('../fonts/Avgardn.woff') format('woff'), url('../fonts/Avgardn.svg#AvantGarde Bk BT') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: "AvantGarde Bk BT";
+//   src: url('../fonts/Avgardn.eot');
+//   src: url('../fonts/Avgardn.eot?#iefix') format('embedded-opentype'), url('../fonts/Avgardn.ttf') format('truetype'), url('../fonts/Avgardn.woff') format('woff'), url('../fonts/Avgardn.svg#AvantGarde Bk BT') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 @font-face {
   font-family: "Trajan Pro";
   src: url('../fonts/TrajanPro-Regular_0.eot');
@@ -180,8 +180,8 @@ h1 {
 }
 .head-desc {
   color: #662929;
-  font-family: "AvantGarde Bk BT";
-  font-size: 13px;
+  font-family: "Lato","Ubuntu","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 15px;
   line-height:20px;
 }
 .head-desc a{
@@ -194,13 +194,13 @@ h1 {
   text-transform: uppercase;
   margin-top: 10px;
   box-sizing: border-box;
-    font-family: "AvantGarde Bk BT";
+    font-family: "Lato","Helvetica Neue","Helvetica","Arial",sans-serif;
     color: #662929;
 }
 .application span {
   font-size: 20px;
   font-weight: bold;
-  font-family: "AvantGarde Bk BT";
+  font-family: "Lato","Helvetica Neue","Helvetica","Arial",sans-serif;
   color: #662929;
 }
 .text-cont {
@@ -208,27 +208,27 @@ h1 {
   width: 100%;
   padding: 13px 0px;
   // border-bottom: 1px solid #662929;
-  font-family: "AvantGarde Bk BT";
+  font-family: "Lato","Helvetica Neue","Helvetica","Arial",sans-serif;
   color: #662929;
 }
 .text-cont p {
-  font-size: 14px;
+  font-size: 15px;
   text-align: justify;
-  line-height:25px;
-  font-family: "AvantGarde Bk BT";
+  line-height:28px;
+  font-family: "Lato","Helvetica Neue","Helvetica","Arial",sans-serif;
   color: #662929;
 }
 .text-cont p:last-child {
   // border-bottom: 1px solid #662929;
   padding-bottom:10px;
-  font-family: "AvantGarde Bk BT";
+  font-family: "Lato","Helvetica Neue","Helvetica","Arial",sans-serif;
   color: #662929;
 }
 
 .head-desc a {
     text-decoration: none;
     box-sizing: border-box;
-    font-family: "AvantGarde Bk BT";
+    font-family: "Lato","Helvetica Neue","Helvetica","Arial",sans-serif;
     color: #662929;
 }
 
