@@ -1,6 +1,3 @@
-<Variable name="maincolor" description="Main Color" type="color" default="#181818" value="#181818"/>
-<Variable name="linkcolor" description="Link Color" type="color" default="#EF746A" value="#f73c56"/>
-
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 /* HTML5 display-role reset for older browsers */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;display:block;}*{margin:0;padding:0;}html{display:block;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:&#39;&#39;;content:none;}table{border-collapse:collapse;border-spacing:0;}
@@ -82,7 +79,7 @@ font-size: 0.9em;
 }
 
 .PopularPosts a:hover{
-color:$(linkcolor);
+color:#f73c56;
 
 }
 
@@ -388,7 +385,7 @@ border-right:none;
 margin:0 auto;
 overflow:hidden;
 padding: 0 28px;
-background:$(maincolor);
+background:#181818;
 z-index:300;
 display:none;
 position:relative;
@@ -563,13 +560,13 @@ transition: .5s;
 -moz-transition: .5s;
 font-size: 55px;
 line-height: 1.52em;
-color:$(maincolor);
+color:#181818;
 font-weight: 400;
 text-decoration: none;
 margin-top: -8px;
 }
 h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {
-color:$(maincolor);
+color:#181818;
 }
 h2.post-title a:hover, h1.post-title a:hover {
 color:#0099FF;
@@ -661,7 +658,7 @@ padding: 11px 14px;
 margin: 15px 3px 50px 0;
 }
 .pagenavi .current, .pagenavi .pages, .pagenavi a:hover {
-background:$(maincolor);
+background:#181818;
 color: #fff;
 }
 .pagenavi .pages {
@@ -719,7 +716,7 @@ width: 100%;
   height: 2px;
   left: 50%;
   bottom: 10px;
-  background: $(linkcolor);
+  background: #f73c56;
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
   -ms-transition: all 0.6s;
@@ -1068,7 +1065,7 @@ margin-bottom: 5px;
 
 .fwstyle {
 color: #fff;
-background: $(maincolor);
+background: #181818;
 display: inline-block;
 padding: 0 10px;
 line-height:1.5;
@@ -1197,7 +1194,7 @@ margin: 0;
 }
 .tab-widget-menu li {
 bottom: -2px;
-color:$(maincolor);
+color:#181818;
 cursor: pointer;
 float: left;
 height: 38px;
@@ -1275,7 +1272,7 @@ background: #222;
 padding-bottom: 1.2em;
 display: inline-block;
 margin-top: 10px;
-color:$(maincolor);
+color:#181818;
 font-family: 'Libre Baskerville', serif;
   /* font-family: 'Open Sans', sans-serif; */
   font-size: 19px;
@@ -1977,7 +1974,7 @@ margin-bottom:30px;
 .mbt-pager li.previous { margin:0px -2px 0px 0px; float: left;  border-right:1px solid #ddd; padding:0px; background:none; 
 } 
 .mbt-pager li.previous a { padding-right: 24px;  }
-.mbt-pager li.next:hover, .mbt-pager li.previous:hover  {background:$(maincolor); }
+.mbt-pager li.next:hover, .mbt-pager li.previous:hover  {background:#181818; }
 .mbt-pager li { width: 50%; display: inline; float: left; text-align: center; } 
 .mbt-pager li a { position: relative; min-height: 77px; display: block; padding: 15px 46px 15px; outline:none; text-decoration:none;}
 .mbt-pager li i { color: ##ff; font-size: 18px; }
@@ -2075,7 +2072,7 @@ padding-bottom: 20px;
 /* Trigger text */
 
 .tooltip-item {
-	color: $(maincolor);
+	color: #181818;
 	cursor: pointer;
 	z-index: 100;
 	position: relative;
@@ -2086,7 +2083,7 @@ padding-bottom: 20px;
 }
 
 .tooltip:hover .tooltip-item {
-	color: $(maincolor);
+	color: #181818;
 	-webkit-transform: translate3d(0,-0.5em,0);
 	transform: translate3d(0,-0.5em,0);
 }
@@ -2136,7 +2133,7 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 	margin-left: -180px;
 	bottom: -5px;
 	text-align: left;
-	background: $(maincolor);
+	background: #181818;
 	opacity: 0;
 	font-size: 0.75em;
 	line-height: 1.5;
@@ -2757,7 +2754,7 @@ width: 51px;
 padding: 16px;
 border-radius: 4px;
 color: white;
-background: $(maincolor);
+background: #181818;
 -webkit-border-radius: 4px;
 -moz-border-radius: 4px;
 -o-border-radius: 4px;
@@ -2774,7 +2771,7 @@ background:#fff;
 
   .bz-hex:hover > a{
 
-color:$(maincolor);
+color:#181818;
 }
 
   .bz-hex a i{
@@ -2789,38 +2786,38 @@ text-align:center;
 }
 
 #copyright a {
-color: $(linkcolor);
+color: #f73c56;
 }
 
 
 .slicknav_btn{
-background-color: $(maincolor);
+background-color: #181818;
 
 }
 
 .slicknav_menu  .slicknav_menutxt{
 
-text-shadow: 0 1px 3px $(maincolor);
+text-shadow: 0 1px 3px #181818;
 
 }
 
 .slicknav_nav ul{
 
-background:$(maincolor);
+background:#181818;
 }
 
 .slicknav_nav .slicknav_row:hover{
 
-color:$(maincolor);
+color:#181818;
 }
 
 
 .slicknav_nav .slicknav_row:hover > a{
-  color:$(maincolor);
+  color:#181818;
 }
 .slicknav_nav a:hover{
     
-    color:$(maincolor);
+    color:#181818;
 background:#fff;
 }
 
@@ -2869,7 +2866,7 @@ margin-bottom: 10px;
 display: inline-block;
 }
 .auth a, .post-da a, .post-com a {
-color: $(maincolor);
+color: #181818;
 }
 .entry-title a {
 position: relative;
@@ -2900,25 +2897,25 @@ color: #222;
 }
 #primary_nav_wrap ul a{
 
-color: $(maincolor);
+color: #181818;
 
 }
 #primary_nav_wrap ul li.current-menu-item a{
-background: $(maincolor);
+background: #181818;
 }
 
 #primary_nav_wrap ul a:hover{
-background: $(maincolor);
+background: #181818;
 
 }
 
 #primary_nav_wrap ul ul{
-background:$(maincolor);
+background:#181818;
 
 }
 #primary_nav_wrap ul ul li:hover > a{
 
-color:$(maincolor);
+color:#181818;
 
 }
 
@@ -3015,7 +3012,7 @@ text-align:center;
 
 .day {
 position: relative;
-color: $(maincolor);
+color: #181818;
 
 
   display: inline-block;
@@ -3088,8 +3085,8 @@ filter: alpha(opacity=100);
 bt-holder{ display:block; }
 
 .bt_readmore_btn_holder { padding-left:10px; padding:0px 10px; display:block; margin-top:20px; font-size:17px;}
-.bt_readmore_btn { color:$(maincolor); text-decoration:none;    display:inline-block;  position:relative}
-.bt_readmore_btn:hover { color:$(linkcolor); text-decoration:none;}
+.bt_readmore_btn { color:#181818; text-decoration:none;    display:inline-block;  position:relative}
+.bt_readmore_btn:hover { color:#f73c56; text-decoration:none;}
 .bt_blog_post_cat a:before, .bt_readmore_btn:before {
 	content: '';
     display: inline-block;
@@ -3109,13 +3106,13 @@ bt-holder{ display:block; }
     bottom: 0;
     height: 1px;
     width: 0;
-    background: $(linkcolor);
+    background: #f73c56;
     transition: width .2s ease;
 }
 
 .bt_blog_post_cat a:hover:before, .bt_readmore_btn:hover:before {
     width: 100%;
-    background: $(linkcolor);
+    background: #f73c56;
     transition: width .5s ease;
 }
 .bt_blog_post_cat a:hover:after, .bt_readmore_btn:hover:after {
@@ -3302,7 +3299,7 @@ display: none;
 font-weight: bold;
 padding: 20px;
 /* line-height: 16px; */
-color: $(maincolor);
+color: #181818;
 font-size: 0.9em;
 transform: translateY(0px);
 -webkit-transform: translateY(0px);
@@ -4404,7 +4401,7 @@ list-style:none;
 }
 
 #menu ul li a:hover {
-	 color: $(linkcolor);
+	 color: #f73c56;
 }
 
 
@@ -4778,7 +4775,7 @@ color:#fff;
 }
 
 h2.entry-title a:hover {
-  color: $(linkcolor);
+  color: #f73c56;
 }
 
 h3.entry-title.related-main {
@@ -4844,7 +4841,7 @@ h3.entry-title.related-main {
   display: inline-block;
   position: absolute;
   top: 0;
-  background-color: $(linkcolor);
+  background-color: #f73c56;
   border-radius: 100%;
   
   -webkit-animation: bounce 2.0s infinite ease-in-out;
