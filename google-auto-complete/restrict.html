@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>google.maps.places.Autocomplete (Solancer)</title>  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <style type="text/css">
+            input{width:600px; display:block;}
+            .center { text-align: center; }
+            footer {
+                background: #f5f5f5 none repeat scroll 0 0;
+                border: 1px solid #ccc;
+                bottom: 0;
+                color: #222;
+                padding: 17px 0;
+                position: fixed;
+                width: 100%;
+            }
+        </style> 
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;libraries=places"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="center">Google Autocomplete with restriction to city establishments(Bangalore)</h1>
+                    </br>
+                    </br>
+                    <form class="form">
+                        <input class="form-control"  id="input" type="text" value="" />
+                    </form>
+                </div>
+            </div>
+        </div>
+<footer>
+	<div class="container">
+		<p class="center">Hobby project by <a rel="author" href="http://www.solancer.com/">Srinivas Gowda</a></p>
+	</div>
+</footer>
+    </body> 
+<script>
+    var center = new google.maps.LatLng(12.971599, 77.594563); // Geocode for Bangalore, India (from http://www.latlong.net/)
+    var circle = new google.maps.Circle({
+        center: center,
+        radius: 10000
+    });
+    var autocomplete5 = new google.maps.places.Autocomplete(
+        document.getElementById('input'),
+        {
+            types: ['establishment'] // you can use geocode, establishment and many more.
+        }
+    );
+    autocomplete5.setBounds(circle.getBounds());
+</script>
+</html>
